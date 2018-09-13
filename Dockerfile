@@ -19,4 +19,4 @@ ADD files /
 
 EXPOSE 8080 1080
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sudo","/entrypoint.sh"]
