@@ -1,0 +1,8 @@
+# Ignore Docker
+.vscode/
+.svn/
+.git/
+.vs/
+README.md
+LICENSE
+.project
