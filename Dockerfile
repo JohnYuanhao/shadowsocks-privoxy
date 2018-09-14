@@ -17,7 +17,7 @@ ENV SERVER_ADDR= \
 
 ADD files /
 
-EXPOSE 8080 1080
+EXPOSE 8118 1080
 
-ENTRYPOINT ["sudo","chmod","+x","./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
 
