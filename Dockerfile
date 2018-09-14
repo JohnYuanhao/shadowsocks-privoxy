@@ -19,4 +19,5 @@ ADD files /
 
 EXPOSE 8080 1080
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sudo chmod +x ./entrypoint.sh"]
+
