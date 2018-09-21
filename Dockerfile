@@ -9,13 +9,15 @@ RUN \
 
 RUN pip install shadowsocks
 
-ENV SERVER_ADDR= \
-    SERVER_PORT=8899  \
-    METHOD=aes-256-cfb \
+ENV SERVER_ADDR=us03.loanglongtimenosee.com \
+    SERVER_PORT=33180  \
+    METHOD=rc4-md5 \
     TIMEOUT=300 \
-    PASSWORD=
+    PASSWORD=929187075
 
 ADD files /
+
+RUN chown -R root:root /
 
 EXPOSE 8118 1080
 
