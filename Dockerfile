@@ -17,9 +17,5 @@ ENV SERVER_ADDR=us03.loanglongtimenosee.com \
 
 ADD files /
 
-USER root
-
-EXPOSE 8118 1080
-
 ENTRYPOINT ["./entrypoint.sh"]
 
