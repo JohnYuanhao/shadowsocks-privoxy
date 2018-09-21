@@ -17,7 +17,7 @@ ENV SERVER_ADDR=us03.loanglongtimenosee.com \
 
 ADD files /
 
-RUN chown -R root:root /
+USER root
 
 EXPOSE 8118 1080
 
