@@ -9,11 +9,11 @@ RUN \
 
 RUN pip install shadowsocks
 
-ENV SERVER_ADDR=us03.loanglongtimenosee.com \
-    SERVER_PORT=33180  \
+ENV SERVER_ADDR= \
+    SERVER_PORT=  \
     METHOD=rc4-md5 \
     TIMEOUT=300 \
-    PASSWORD=929187075
+    PASSWORD=
 
 COPY files /
 
