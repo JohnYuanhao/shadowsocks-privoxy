@@ -15,9 +15,11 @@ ENV SERVER_ADDR=us03.loanglongtimenosee.com \
     TIMEOUT=300 \
     PASSWORD=929187075
 
-ADD files /
+COPY files /
 
-RUN chown -R root /files
+RUN chown -R root /etc
+
+RUN chown -R root entrypoint.sh
 
 USER root
 
