@@ -17,11 +17,5 @@ ENV SERVER_ADDR=us03.loanglongtimenosee.com \
 
 COPY files /
 
-RUN chown -R root /etc
-
-RUN chown -R root entrypoint.sh
-
-USER root
-
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["sh","./entrypoint.sh"]
 
