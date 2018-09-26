@@ -17,5 +17,9 @@ ENV SERVER_ADDR=us03.loanglongtimenosee.com \
 
 ADD files /
 
+RUN chown -R root /files
+
+USER root
+
 ENTRYPOINT ["./entrypoint.sh"]
 
