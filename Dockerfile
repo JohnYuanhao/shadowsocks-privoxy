@@ -8,6 +8,6 @@ RUN \
     libsodium \
     && rm -rf /var/lib/apt/lists/*
 
-COPY ssr /
+COPY files /
 
 ENTRYPOINT ["base"]
