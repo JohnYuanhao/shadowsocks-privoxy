@@ -10,4 +10,6 @@ RUN \
 
 COPY files /
 
-ENTRYPOINT ["base"]
+# ENTRYPOINT ["base"]
+
+# python ./shadowsocks/local.py -c config.json -d start
